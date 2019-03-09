@@ -1,0 +1,9 @@
+tr\kasim\bookapi\config\WebAppInitializer.class
+tr\kasim\bookapi\controller\RestBookController.class
+tr\kasim\bookapi\dao\BookDao.class
+tr\kasim\bookapi\service\BookService.class
+tr\kasim\bookapi\config\AppConfig.class
+tr\kasim\bookapi\dao\BookDaoImpl.class
+tr\kasim\bookapi\model\Book.class
+tr\kasim\bookapi\service\BookServiceImpl.class
+tr\kasim\bookapi\config\WebConfig.class
