@@ -20,7 +20,7 @@ import static org.hibernate.cfg.Environment.*;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 /**
  *
- * @author SelmanKasim
+ * @author Selman Kasim
  */
 @Configuration
 @PropertySource("classpath:db.properties")
