@@ -5,7 +5,6 @@
  */
 package tr.kasim.bookapi.config;
 
-
 import java.util.Properties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +19,7 @@ import static org.hibernate.cfg.Environment.*;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 /**
  *
- * @author Selman Kasim
+ * @author SelmanKasim
  */
 @Configuration
 @PropertySource("classpath:db.properties")
@@ -29,7 +28,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
     @ComponentScan("tr.kasim.bookapi.dao"),
     @ComponentScan("tr.kasim.bookapi.service")    
 })
-public class AppConfig {
+public class AppConfiguration {
     
     @Autowired
     private Environment env;
@@ -45,7 +44,7 @@ public class AppConfig {
         prop.put(USER, env.getProperty("mysql.user"));
         prop.put(PASS, env.getProperty("mysql.password"));
         
-        //Setting Hibertane properties
+        //Setting Hibernate properties
         
         prop.put(SHOW_SQL, env.getProperty("hibernate.show_sql"));
         prop.put(HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto"));
