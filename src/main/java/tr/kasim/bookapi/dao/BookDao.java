@@ -12,6 +12,7 @@ import tr.kasim.bookapi.model.Book;
  *
  * @author SelmanKasim
  */
+
 public interface BookDao {
     
     //Save the book
@@ -28,6 +29,8 @@ public interface BookDao {
     
     //Delete a book
     void delete(long id);
+    
+    
     
     
     
